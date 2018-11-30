@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Set the date we're counting down to
-    var countDownDate = new Date("Nov 30, 2018 00:39:00").getTime();
+    var countDownDate = new Date("Nov 30, 2018 17:23:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -17,14 +17,19 @@ $(document).ready(function() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Display the result in the element with id="demo"
-    $("#demo").text(days + " Days " + hours + " Hours " + minutes + " Minutes " + seconds + " Seconds");
+    // Display the result in the element with id="timer"
+    var title = $("<h1></h1>");
+    title.text("Tempo para minha familia chegar...");
+    console.log(title);
+    var timer = $("<p></p>");
+    timer.text(days + " Days " + hours + " Hours ").append("<br />").append(minutes + " Minutes " + seconds + " Seconds");
+    $("#timer").html(title).append(timer);
 
-    // If the count down is finished, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        $("#demo").text("Minha Familia Chegou!");
-        $("#main").css("backgroundImage", "url('./family.gif')");
-    }
+        // If the count down is finished, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            $("#timer").text("Minha Familia Chegou!");
+            $("#main").css("backgroundImage", "url('./family.gif')");
+        }
     }, 1000);
-})
+});

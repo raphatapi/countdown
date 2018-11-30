@@ -2,11 +2,15 @@
     background-image: url("./snow.gif");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     height: 100vh;
 }
 
-#demo {
+h1 {
+    color: white;
+}
+
+#timer {
     margin-top: 2%;
     text-align: center;
     font-size: 70px;
@@ -24,3 +28,14 @@
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
   }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #main {
+        padding: 0 !important;
+    }
+    
+    #timer {
+        font-size: 40px;
+    }
+}
