@@ -18,12 +18,11 @@ $(document).ready(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="timer"
-    var title = $("<h1></h1>");
-    title.text("Tempo para minha familia chegar...");
-    console.log(title);
+    var title = $("<h1>");
+    title.text("My Brazilian family is arriving in...");
     var timer = $("<p></p>");
-    timer.text(days + " Days " + hours + " Hours ").append("<br />").append(minutes + " Minutes " + seconds + " Seconds");
-    $("#timer").html(title).append(timer);
+    timer.text(days + " days " + hours + " hours ").append("<br />").append(minutes + " minutes " + seconds + " seconds");
+    $("#main").html(title).append(timer);
 
         // If the count down is finished, write some text 
         if (distance < 0) {
