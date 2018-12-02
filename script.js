@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Set the date we're counting down to
-    var countDownDate = new Date("Dec 24, 2018 07:10:00").getTime();
+    var countDownDate = new Date("Dec 24, 2018 14:22:30").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -17,25 +17,23 @@ $(document).ready(function() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Display the result in the element with id="timer"
+    // Display the result in the element with id="main"
     var title = $("<h1>");
     title.text("My Brazilian family is arriving in...");
-    var timer = $("<p></p>");
+    var timer = $("<p>");
     timer.text(days + " days " + hours + " hours ").append("<br />").append(minutes + " minutes " + seconds + " seconds");
     $("#main").html(title).append(timer);
-    // clearInterval(x);
 
         // If the count down is finished, write some text 
         if (distance < 0) {
             clearInterval(x);
-            $("#timer").text("Minha Familia Chegou!");
-            $("#main").css("backgroundImage", "url('./family.gif')");
+            title.text("Minha Familia Chegou!");
+            $("#main").html(title).css("backgroundImage", "url('./family.gif')");
         }
     }, 1000);
 
-    var calendar = $('<div>');
+    var calendar = $('<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=raphaeltapioca10%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FDenver" style="border-width:0" width="100%" height="200vh" frameborder="0" scrolling="no"></iframe>');
     calendar.addClass("calendar");
-    calendar.append('<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=raphaeltapioca10%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FDenver" style="border-width:0" width="100%" height="auto" frameborder="0" scrolling="no"></iframe>');
-    $("#calendar").html(calendar);
+    calendar.insertAfter("#main");
 
 });
