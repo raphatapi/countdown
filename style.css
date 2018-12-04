@@ -45,7 +45,7 @@ h1 {
 }
 
 .fe_container .fe_title .fe_forecast_link {
-    display: none;
+    display: none !important;
 }
 
 @-webkit-keyframes glow {
