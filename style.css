@@ -46,8 +46,9 @@ h1 {
     float: left;
 }
 
-.fe_forecast_link {
+#forecast_embed.fe_forecast_link {
     display: none !important;
+    padding: 1%;
 }
 
 @-webkit-keyframes glow {
