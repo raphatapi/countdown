@@ -33,7 +33,7 @@ $(document).ready(function() {
         }
     }, 1000);
 
-    var forecast = $('<iframe id="forecast_embed" frameborder="0" height="245" width="100%" src="//forecast.io/embed/#lat=42.3583&lon=-71.0603&name=Downtown Boston&color=#00aaff&font=Georgia&units=uk"></iframe>');
+    var forecast = $('<iframe id="forecast_embed" frameborder="0" height="245" width="50%" src="//forecast.io/embed/#lat=42.3583&lon=-71.0603&name=Park City, UT&color=#00aaff&font=Georgia&units=uk"></iframe>');
     forecast.addClass("forecast");
     forecast.insertAfter("#main");
     
