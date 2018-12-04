@@ -46,7 +46,7 @@ h1 {
     float: left;
 }
 
-.fe_container .fe_title .fe_forecast_link {
+.fe_forecast_link {
     display: none !important;
 }
 
