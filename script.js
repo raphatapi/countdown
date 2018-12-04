@@ -1,7 +1,7 @@
 $(document).ready(function() {
     
     // Set the date we're counting down to
-    var countDownDate = new Date("Dec 24, 2018 14:22:30").getTime();
+    var countDownDate = new Date("Dec 24, 2018 16:22:30").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -37,7 +37,7 @@ $(document).ready(function() {
     calendar.addClass("calendar");
     calendar.insertAfter("#main");
 
-    var forecast = $('<iframe id="forecast_embed" frameborder="0" height="200" width="50%" src="//forecast.io/embed/#lat=40.646061&lon=-111.497971&name=Park City&color=#333333&font=Georgia&units=us"></iframe>');
+    var forecast = $('<iframe id="forecast_embed" frameborder="0" height="190" width="50%" src="//forecast.io/embed/#lat=40.646061&lon=-111.497971&name=Park City&color=#333333&&font=Georgia&units=us"></iframe>');
     forecast.addClass("forecast");
     forecast.insertAfter(".calendar");
 
