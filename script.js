@@ -33,12 +33,12 @@ $(document).ready(function() {
         }
     }, 1000);
 
-    var forecast = $('<iframe id="forecast_embed" frameborder="0" height="245" width="50%" src="//forecast.io/embed/#lat=42.3583&lon=-71.0603&name=Park City, UT&color=#00aaff&font=Georgia&units=uk"></iframe>');
-    forecast.addClass("forecast");
-    forecast.insertAfter("#main");
-    
     var calendar = $('<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=raphaeltapioca10%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FDenver" style="border-width:0" width="50%" height="200vh" frameborder="0" scrolling="no" float="right"></iframe>');
     calendar.addClass("calendar");
     calendar.insertAfter("#main");
+
+    var forecast = $('<iframe id="forecast_embed" frameborder="0" height="200" width="50%" src="//forecast.io/embed/#lat=40.646061&lon=-111.497971&name=Park City&color=#333333&font=Georgia&units=us"></iframe>');
+    forecast.addClass("forecast");
+    forecast.insertAfter(".calendar");
 
 });
