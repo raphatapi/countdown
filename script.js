@@ -20,7 +20,7 @@ $(document).ready(function() {
 
     // Display the result in the element with id="main"
     var title = $("<h1>");
-    title.text("My Brazilian family is arriving in...");
+    title.text("My Brazilian family arrives in...");
     var timer = $("<p>");
     timer.text(days + " days " + hours + " hours ").append("<br />").append(minutes + " minutes " + seconds + " seconds");
     $("#main").html(title).append(timer);
