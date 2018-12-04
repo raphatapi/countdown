@@ -1,6 +1,6 @@
-body {
+/* body {
     overflow: hidden;
-}
+} */
 
 .col {
     padding: 0 !important;
@@ -40,7 +40,6 @@ h1 {
 
 .calendar {
     float: left;
-    overflow: hidden !important;
 }
 
 #forecast_embed {

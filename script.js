@@ -37,7 +37,7 @@ $(document).ready(function() {
     calendar.addClass("calendar");
     calendar.insertAfter("#main");
 
-    var forecast = $('<iframe id="forecast_embed" frameborder="0" height="30%" width="30%" src="//forecast.io/embed/#lat=40.646061&lon=-111.497971&name=Park City&color=#333333&font=Georgia&units=us"></iframe>');
+    var forecast = $('<iframe id="forecast_embed" frameborder="0" height="30%" width="30%" src="//forecast.io/embed/#lat=40.646061&lon=-111.497971&name=Park City&color=#333333&background=orange&font=Georgia&units=us"></iframe>');
     forecast.addClass("forecast");
     forecast.insertAfter(".calendar");
 
