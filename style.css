@@ -1,6 +1,6 @@
-/* body {
+body {
     overflow: hidden;
-} */
+}
 
 .col {
     padding: 0 !important;
@@ -43,12 +43,9 @@ h1 {
 }
 
 #forecast {
-    height: 30% !important;
+    height: 35% !important;
     width: 30% !important;
-}
-
-.day {
-    padding: 0 0.3em !important;
+    top: -25px;
 }
 
 .fe_title {
