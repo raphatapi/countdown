@@ -28,7 +28,7 @@ h1 {
 }
 
 #main p {
-    margin: 5% auto 0 auto;
+    margin: 8% auto 0 auto;
     text-align: center;
     font-size: 70px;
     color: white;
@@ -42,14 +42,20 @@ h1 {
     float: left;
 }
 
-#forecast_embed {
-    float: left;
+#forecast {
+    height: 30% !important;
+    width: 30% !important;
+}
+
+.day {
+    padding: 0 0.3em !important;
 }
 
 .fe_title {
     display: none;
 }
 
+/*GLOW TIMER*/
 @-webkit-keyframes glow {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
@@ -58,6 +64,9 @@ h1 {
         text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
 }
+
+
+
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -79,7 +88,7 @@ h1 {
         display: none;
     }
 
-    #forecast_embed {
-        display: none;
+    #forecast {
+        display: none !important;
     }
 }
