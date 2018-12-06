@@ -1,5 +1,24 @@
 $(document).ready(function() {
     
+    var audioArray = document.getElementsByClassName('songs');
+        var i = 0;
+        audioArray[i].play();
+        for (i = 0; i < audioArray.length - 1; ++i) {
+            audioArray[i].addEventListener('ended', function(e){
+                var currentSong = e.target;
+                var next = $(currentSong).nextAll('audio');
+                if (next.length) $(next[0]).trigger('play');
+            });
+        }
+
+
+    // var au = new Audio();
+    // au.src = "Tannenbaum.m4a";
+    // au.loop = true;
+    // au.controls = false;
+    // au.play();
+    // $("body").prepend(au);
+
     // Set the date we're counting down to
     var countDownDate = new Date("Dec 24, 2018 16:22:30").getTime();
 
@@ -43,4 +62,3 @@ $(document).ready(function() {
     // forecast.insertAfter(".calendar");
 
 });
-
