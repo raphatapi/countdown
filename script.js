@@ -1,15 +1,15 @@
 $(document).ready(function() {
     
-    var audioArray = $(".songs");
-    var i = 0;
-    audioArray[i].play();
-    for (i = 0; i < audioArray.length - 1; ++i) {
-        audioArray[i].addEventListener('ended', function(e){
-            var currentSong = e.target;
-            var next = $(currentSong).nextAll('audio');
-            if (next.length) $(next[0]).trigger('play');
-        });
-    };
+    // var audioArray = $(".songs");
+    // var i = 0;
+    // audioArray[i].play();
+    // for (i = 0; i < audioArray.length - 1; ++i) {
+    //     audioArray[i].addEventListener('ended', function(e){
+    //         var currentSong = e.target;
+    //         var next = $(currentSong).nextAll('audio');
+    //         if (next.length) $(next[0]).trigger('play');
+    //     });
+    // };
 
 
     // var au = new Audio("Tannenbaum.m4a","Christmas.m4a");
@@ -52,7 +52,7 @@ $(document).ready(function() {
     }, 1000);
 
 
-    var calendar = $('<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=raphaeltapioca10%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FDenver" style="border-style:none" width="30%" height="80%" frameborder="0" scrolling="no" float="right"></iframe>');
+    var calendar = $('<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=raphaeltapioca10%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FDenver" style="border-style:none" width="30%" height="104%" frameborder="0" scrolling="no" float="right"></iframe>');
     calendar.addClass("calendar");
     calendar.insertAfter("#main");
     
