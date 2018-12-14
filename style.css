@@ -27,6 +27,10 @@ h1 {
     font-size: 70px;
 }
 
+.clock {
+    margin: 15% auto 0 20%;
+}
+
 #main p {
     margin: 15% auto 0 auto;
     text-align: center;
