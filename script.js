@@ -12,11 +12,10 @@ $(document).ready(function() {
     // };
 
 
-    // var au = new Audio("Tannenbaum.m4a","Christmas.m4a");
-    // au.loop = true;
-    // au.controls = true;
-    // au.play();
-    // $("body").prepend(au);
+    var au = new Audio("Tannenbaum.m4a");
+    au.loop = true;
+    au.play();
+    $("body").prepend(au);
 
     // Set the date we're counting down to
     var countDownDate = new Date("Dec 24, 2018 16:22:30").getTime();
