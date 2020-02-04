@@ -10,25 +10,35 @@ body {
     height: 100vh;
     width: 75%;
     float: left;
-    background-image: url("./snow.gif");
+    background-image: url("./bday.gif");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     padding-top: 5%;
 }
 
 h1 {
-    color: orange;
+    color: purple;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
-    text-align: center;
+    text-align: right;
     font-family: 'Mountains of Christmas', cursive;
     font-size: 70px;
+    padding-right: 3%;
 }
 
 .clock {
-    margin: 15% auto 0 27%;
+    margin: 35% auto 0 27%;
+}
+
+.flip-clock-wrapper {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.flip-clock-divider .flip-clock-label{
+    color: lightgray;
 }
 
 #main p {
