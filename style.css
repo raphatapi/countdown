@@ -23,8 +23,10 @@ h1 {
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
     text-align: center;
-    font-family: 'Mountains of Christmas', cursive;
+    /* font-family: 'Mountains of Christmas', cursive; */
+    font-family: 'Coming Soon', cursive;
     font-size: 50px;
+    font-weight: 600;
     padding-left: 8%;
 }
 
@@ -35,10 +37,15 @@ h1 {
 .flip-clock-wrapper {
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Coming Soon', cursive;
 }
 
 .flip-clock-divider .flip-clock-label{
-    color: lightgray;
+    color: rgb(49, 49, 49);
+}
+
+.flip-clock-wrapper ul li a {
+    line-height: initial;
 }
 
 #main p {
