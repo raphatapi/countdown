@@ -14,7 +14,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 h1 {
@@ -27,11 +27,12 @@ h1 {
     font-family: 'Coming Soon', cursive;
     font-size: 50px;
     font-weight: 600;
-    padding-left: 8%;
+    padding-left: 5%;
+    margin-top: 5%;
 }
 
 .clock {
-    margin: 15% auto 0 30%;
+    margin: 5% auto 0 30%;
 }
 
 .flip-clock-wrapper {

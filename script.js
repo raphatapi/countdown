@@ -13,7 +13,7 @@ $(document).ready(function() {
     // Grab the current date
     var currentDate = new Date().getTime();
     // Set some date in the future. In this case, it's always Jan 1
-    var futureDate = new Date("Feb 08, 2020 08:30:00").getTime();
+    var futureDate = new Date("Feb 05, 2020 11:23:00").getTime();
     // Calculate the difference in seconds between the future and current date
     var diff = futureDate / 1000 - currentDate / 1000;
     var clock = new FlipClock($('.clock'),diff, {
@@ -26,8 +26,8 @@ $(document).ready(function() {
                 var happy = new Audio("bensound-happyrock.mp3");
                 happy.loop = true;
                 happy.play();
-                title.text("It's My Birthday! YAY!");
-                $("#main").html(title).css("backgroundImage", "url('./happy_birthday.gif')");
+                title.text("It's My 8th Birthday! YAY!").css({"margin-top" : "0", "padding-left" : "35%"});
+                $("#main").html(title).css({"background-image" : "url('./happy_birthday.gif')", "background-position" : "bottom"});
             }
         }
     }); 
