@@ -13,7 +13,7 @@ $(document).ready(function() {
     // Grab the current date
     var currentDate = new Date().getTime();
     // Set some date in the future. In this case, it's always Jan 1
-    var futureDate = new Date("Feb 05, 2020 11:30:00").getTime();
+    var futureDate = new Date("Feb 05, 2020 11:40:00").getTime();
     // Calculate the difference in seconds between the future and current date
     var diff = futureDate / 1000 - currentDate / 1000;
     var clock = new FlipClock($('.clock'),diff, {
