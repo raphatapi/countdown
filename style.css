@@ -13,7 +13,7 @@ body {
     background-image: url("./bday.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     padding-top: 10%;
 }
 
