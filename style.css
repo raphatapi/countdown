@@ -8,9 +8,9 @@ body {
 
 #main {
     height: 100vh;
-    width: 75%;
+    width: 100%;
     float: left;
-    background-image: url("./bday.jpg");
+    background-image: url("./love-birds.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
